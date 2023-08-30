@@ -1,3 +1,5 @@
-2023/08/29-18:31:23.928 38b4 Reusing MANIFEST C:\Users\NDC\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Site Characteristics Database/MANIFEST-000001
-2023/08/29-18:31:23.929 38b4 Recovering log #3
-2023/08/29-18:31:23.929 38b4 Reusing old log C:\Users\NDC\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Site Characteristics Database/000003.log 
+2023/08/29-20:53:34.851 830 Log #3: 9 ops saved to Table #4 OK
+2023/08/29-20:53:34.852 830 Archiving C:\Users\Administrator\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Site Characteristics Database/000003.log: OK
+2023/08/29-20:53:34.853 830 Table #4: 9 entries OK
+2023/08/29-20:53:34.854 830 Archiving C:\Users\Administrator\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Site Characteristics Database/MANIFEST-000001: OK
+2023/08/29-20:53:34.953 830 **** Repaired leveldb C:\Users\Administrator\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Site Characteristics Database; recovered 1 files; 486 bytes. Some data may have been lost. ****

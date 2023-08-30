@@ -1,3 +1,2 @@
-2023/08/30-07:41:35.782 14d4 Reusing MANIFEST C:\Users\NDC\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Local Storage\leveldb/MANIFEST-000001
-2023/08/30-07:41:35.790 14d4 Recovering log #3
-2023/08/30-07:41:35.798 14d4 Reusing old log C:\Users\NDC\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Local Storage\leveldb/000003.log 
+2023/08/29-20:53:31.319 520 Creating DB C:\Users\Administrator\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2\Local Storage\leveldb since it was missing.
+2023/08/29-20:53:34.534 520 Delete type=3 #1

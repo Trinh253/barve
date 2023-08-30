@@ -1,0 +1,29 @@
+[17072:10936:0829/184607.217:WARNING:chrome_main_delegate.cc(596)] This is Chrome version 116.1.57.53 (not a warning)
+[17072:10936:0829/184607.223:WARNING:chrome_browser_cloud_management_controller.cc(88)] Could not create policy manager as CBCM is not enabled.
+[17072:10936:0829/184607.277:ERROR:chrome_browser_cloud_management_controller.cc(163)] Cloud management controller initialization aborted as CBCM is not enabled.
+[17072:10936:0829/184607.330:WARNING:external_provider_impl.cc(513)] Malformed extension dictionary for extension: odbfpeeihdkbihmopkbjmoonfanlbfcl.  Key external_update_url has value "", which is not a valid URL.
+[17072:10936:0829/184607.336:WARNING:chrome_browser_main_win.cc(687)] Command line too long for RegisterApplicationRestart:  --allow-pre-commit-input --component-updater=url-source=https://go-updater.brave.com/extensions --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-domain-reliability --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --enable-automation --enable-dom-distiller --enable-logging --incognito --load-extension="C:\Users\NDC\Downloads\hektCaptcha-v0.3.0b3" --log-level=0 --lso-url=https://no-thanks.invalid --no-first-run --no-service-autorun --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --password-store=basic --remote-debugging-port=0 --sync-url=https://sync-v2.brave.com/v2 --test-type=webdriver --tor --use-mock-keychain --user-data-dir="C:\Users\NDC\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 2" --variations-insecure-server-url=https://variations.brave.com/seed --variations-server-url=https://variations.brave.com/seed --restore-last-session --restart
+[17072:10936:0829/184607.348:INFO:startup_browser_creator.cc(67)] Switching to Tor profile and starting Tor service.
+[17072:10936:0829/184607.831:WARNING:CONSOLE(5)] "crbug/1173575, non-JS module files deprecated.", source: chrome://resources/js/load_time_data_deprecated.js (5)
+[17072:10936:0829/184608.035:INFO:CONSOLE(1483)] "Snowflake: == snowflake proxy ==", source: chrome-extension://mafpmfcccpbjnhfhjnllmmalhifmlcie/snowflake.js (1483)
+[17072:10936:0829/184609.306:INFO:CONSOLE(1483)] "Snowflake: Toggle state not yet saved", source: chrome-extension://mafpmfcccpbjnhfhjnllmmalhifmlcie/snowflake.js (1483)
+[17072:4724:0829/184609.794:ERROR:cert_issuer_source_aia.cc(36)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[17072:10936:0829/184610.032:INFO:CONSOLE(1483)] "Snowflake: Starting snowflake", source: chrome-extension://mafpmfcccpbjnhfhjnllmmalhifmlcie/snowflake.js (1483)
+[17072:10936:0829/184610.032:INFO:CONSOLE(1483)] "Snowflake: Snowflake IDs: gl9p67swwpd", source: chrome-extension://mafpmfcccpbjnhfhjnllmmalhifmlcie/snowflake.js (1483)
+[17072:10936:0829/184610.032:INFO:CONSOLE(1483)] "Snowflake: Polling broker..", source: chrome-extension://mafpmfcccpbjnhfhjnllmmalhifmlcie/snowflake.js (1483)
+[17072:10936:0829/184610.032:INFO:CONSOLE(614)] "NAT type: unknown", source: chrome-extension://mafpmfcccpbjnhfhjnllmmalhifmlcie/snowflake.js (614)
+[17072:4724:0829/184611.298:ERROR:cert_issuer_source_aia.cc(36)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[17072:4724:0829/184613.246:ERROR:cert_issuer_source_aia.cc(36)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[17072:4724:0829/184624.201:ERROR:cert_issuer_source_aia.cc(36)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+

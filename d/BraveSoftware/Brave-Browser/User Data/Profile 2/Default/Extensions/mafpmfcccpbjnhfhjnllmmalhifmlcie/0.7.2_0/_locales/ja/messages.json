@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "検閲されている国にいるユーザーがあなたのネットワークを使って Tor ネットワークに接続できるようにします。"
+   },
+   "badgeCookiesOff": {
+      "message": "Cookie が有効になっていません。"
+   },
+   "popupBridgeUnreachable": {
+      "message": "ブリッジに接続できませんでした。"
+   },
+   "popupDescOn": {
+      "message": "Snowflake が過去 24 時間に検閲回避を支援したユーザーの数: $1"
+   },
+   "popupEnabled": {
+      "message": "有効にする"
+   },
+   "popupLearnMore": {
+      "message": "詳細はこちら"
+   },
+   "popupRetry": {
+      "message": "再試行"
+   },
+   "popupRetrying": {
+      "message": "再試行中..."
+   },
+   "popupRunInBackground": {
+      "message": "ブラウザを閉じても実行し続ける"
+   },
+   "popupStatusOff": {
+      "message": "スノーフレークは無効です"
+   },
+   "popupStatusOn": {
+      "message": "現在接続しているユーザー数: $1"
+   },
+   "popupStatusReady": {
+      "message": "あなたの Snowflakeは、ユーザーの検閲回避を支援する準備ができています"
+   },
+   "popupWebRTCOff": {
+      "message": "WebRTC機能が検出されませんでした。"
+   }
+}

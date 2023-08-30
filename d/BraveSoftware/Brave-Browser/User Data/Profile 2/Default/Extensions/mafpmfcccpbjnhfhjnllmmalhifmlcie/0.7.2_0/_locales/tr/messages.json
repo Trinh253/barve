@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "Sansür uygulanan ülkelerdeki kullanıcıların, ağ bağlantınızı kullanarak Tor ağına ulaşmasını sağlayın."
+   },
+   "badgeCookiesOff": {
+      "message": "Çerezler etkin değil."
+   },
+   "popupBridgeUnreachable": {
+      "message": "Köprü ile bağlantı kurulamadı."
+   },
+   "popupDescOn": {
+      "message": "Snowflake uygulamanızın son 24 saatte sansürü aşmasına yardımcı olduğu kullanıcı sayısı: $1"
+   },
+   "popupEnabled": {
+      "message": "Etkin"
+   },
+   "popupLearnMore": {
+      "message": "Ayrıntılı bilgi alın"
+   },
+   "popupRetry": {
+      "message": "Yeniden dene"
+   },
+   "popupRetrying": {
+      "message": "Yeniden deneniyor..."
+   },
+   "popupRunInBackground": {
+      "message": "Tarayıcı kapatıldığında çalışmayı sürdürsün"
+   },
+   "popupStatusOff": {
+      "message": "Snowflake kapalı"
+   },
+   "popupStatusOn": {
+      "message": "Şu anda bağlı olan kullanıcı sayısı: $1"
+   },
+   "popupStatusReady": {
+      "message": "Snowflake uygulamanız kullanıcıların sansürü aşmasına yardımcı olmaya hazır"
+   },
+   "popupWebRTCOff": {
+      "message": "WebRTC özelliği algılanamadı."
+   }
+}

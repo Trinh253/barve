@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "به کاربران در کشورهای مسدودشده اجازه دهید تا از اتصال شبکهٔ شما برای دستری به شبکهٔ Tor استفاده کنند."
+   },
+   "badgeCookiesOff": {
+      "message": "کوکی‌ها فعال نیستند."
+   },
+   "popupBridgeUnreachable": {
+      "message": "اتصال به پل ممکن نبود."
+   },
+   "popupDescOn": {
+      "message": "تعداد کاربرانی که Snowflake شما در ۲۴ ساعت گذشته به آنها کمک کرده تا سانسور را دور بزنند: $1"
+   },
+   "popupEnabled": {
+      "message": "فعال"
+   },
+   "popupLearnMore": {
+      "message": "بیشتر یاد بگیرید"
+   },
+   "popupRetry": {
+      "message": "تلاش دوباره"
+   },
+   "popupRetrying": {
+      "message": "در حال تلاش دوباره..."
+   },
+   "popupRunInBackground": {
+      "message": "وقتی مرورگر بسته است همچنان در حال اجرا بماند"
+   },
+   "popupStatusOff": {
+      "message": "Snowflake خاموش است"
+   },
+   "popupStatusOn": {
+      "message": "تعداد کاربرانی که متصل هستند: $1"
+   },
+   "popupStatusReady": {
+      "message": "Snowflake شما آماده‌ٔ کمک به کاربران برای دور زدن فیلترینگ است"
+   },
+   "popupWebRTCOff": {
+      "message": "قابلیت WebRTC تشخیص داده نشده است."
+   }
+}

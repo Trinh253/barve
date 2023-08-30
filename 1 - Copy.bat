@@ -1,0 +1,1 @@
+start "Chrome" "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --user-data-dir=""C:\Users\NDC\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 3"

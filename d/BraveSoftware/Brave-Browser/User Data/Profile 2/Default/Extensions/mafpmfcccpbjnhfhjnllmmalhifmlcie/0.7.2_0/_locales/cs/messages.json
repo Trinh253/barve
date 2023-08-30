@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "Umožněte uživatelům v cenzurovaných zemích používat vaše síťové připojení pro přístup k síti Tor."
+   },
+   "badgeCookiesOff": {
+      "message": "Cookies nejsou povoleny."
+   },
+   "popupBridgeUnreachable": {
+      "message": "Nelze se připojit k mostu."
+   },
+   "popupDescOn": {
+      "message": "Počet uživatelů, kterým pomohl tvůj Snowflake obejít cenzuru za posledních 24 hodin: $1"
+   },
+   "popupEnabled": {
+      "message": "Povoleno"
+   },
+   "popupLearnMore": {
+      "message": "Zjistit více"
+   },
+   "popupRetry": {
+      "message": "Opakovat"
+   },
+   "popupRetrying": {
+      "message": "Opakování ..."
+   },
+   "popupRunInBackground": {
+      "message": "Pokračovat v běhu po zavření prohlížeče"
+   },
+   "popupStatusOff": {
+      "message": "Snowflake je vypnutý"
+   },
+   "popupStatusOn": {
+      "message": "Počet momentálně připojených uživatelů:$1"
+   },
+   "popupStatusReady": {
+      "message": "Váš Snowflake je připraven pomáhat uživatelům obejít cenzuru"
+   },
+   "popupWebRTCOff": {
+      "message": "WebRTC rozšíření nebylo detekováno."
+   }
+}

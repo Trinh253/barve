@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "Permite que usuarios en países censurados usen tu conexión de red para acceder a la red Tor."
+   },
+   "badgeCookiesOff": {
+      "message": "Las cookies no están habilitadas."
+   },
+   "popupBridgeUnreachable": {
+      "message": "No se ha podido conectar al puente."
+   },
+   "popupDescOn": {
+      "message": "Número de usuarios que tu Snowflake ha ayudado a sortear la censura en las últimas 24 horas: $1"
+   },
+   "popupEnabled": {
+      "message": "Activado"
+   },
+   "popupLearnMore": {
+      "message": "Conocer más"
+   },
+   "popupRetry": {
+      "message": "Reintentar"
+   },
+   "popupRetrying": {
+      "message": "Reintentando ..."
+   },
+   "popupRunInBackground": {
+      "message": "Seguir funcionando cuando se cierre el navegador"
+   },
+   "popupStatusOff": {
+      "message": "Snowflake está apagado"
+   },
+   "popupStatusOn": {
+      "message": "Número de usuarios actualmente conectados: $1"
+   },
+   "popupStatusReady": {
+      "message": "Tu Snowflake está listo para ayudar a los usuarios a evadir la censura"
+   },
+   "popupWebRTCOff": {
+      "message": "No se detecta WebRTC."
+   }
+}

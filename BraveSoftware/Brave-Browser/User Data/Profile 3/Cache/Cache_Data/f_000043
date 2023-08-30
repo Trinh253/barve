@@ -1,0 +1,218 @@
+// ==UserScript==
+// @name       Bypass All Shortlinks
+// @name:id    Bypass Semua Shortlink
+// @name:ug    Bypass بارلىق قىسقا ئۇلىنىشلار
+// @name:ar    تجاوز الجميع الروابط المختصرة
+// @name:he    לַעֲקוֹף את כל קישורים קצרים
+// @name:hi    सभी शॉर्टलिंक को बायपास करें
+// @name:ja    バイパス 全て ショートリンク
+// @name:fr    Bypass Tout Lien courts
+// @name:ko    모든 짧은 링크 우회
+// @name:th    บายพาส ทั้งหมด ลิงค์สั้น
+// @name:bg    Заобикаляне на всички кратки връзки
+// @name:ro    Bypass Toate Linkuri scurte
+// @name:fi    Ohittaa Kaikki Lyhyet linkit
+// @name:it    Bypassare Tutto Collegamenti brevi
+// @name:el    Παράκαμψη Ολα Σύντομοι σύνδεσμοι
+// @name:eo    Pretervojo Ĉiuj Mallongaj ligiloj
+// @name:es    Saltarse Todos los Enlaces Acortados
+// @name:hu    Bypass Összes Rövid linkek
+// @name:nb    Omgå Alle Kortlenker
+// @name:sk    Obísť Všetky Krátke odkazy
+// @name:sv    Förbigå alla kortlänkar
+// @name:sr    Zaobići Sve Kratke veze
+// @name:pl    Bypass Wszystkie Krótkie linki
+// @name:nl    Bypass Alle Korte links
+// @name:de    Bypass Alle Kurzlinks
+// @name:da    Bypass Alle Shortlinks
+// @name:cs    Obcházeč všech zkracovačů odkazů
+// @name:uk    Обхід всі Короткі посилання
+// @name:ru    Обход Все Короткие ссылки
+// @name:tr    Bypass Tüm Kısa Linkler
+// @name:vi    Bỏ qua Tất cả Các liên kết ngắn
+// @name:zh-CN 旁路 全部 短链接
+// @name:zh-TW 旁路 全部 短鏈接
+// @name:pt-BR Bypass Todos Links curtos
+// @name:fr-CA Bypass Tout Lien courts
+// @namespace  Violentmonkey Scripts
+// @version    85.8
+// @grant      none
+// @author     Bloggerpemula
+// @run-at     document-start
+// @antifeature    tracking
+// @description    Bypass All Shortlinks Sites Automatically Skips Annoying Link Shorteners , Skip AdFly , Linkvertise and No Annoying Ads, Directly to Your Destination, and now Support Auto Downloading Your Files
+// @description:id Bypass Semua Situs Shortlink Secara Otomatis Langsung ke Tujuan Tanpa Iklan yang Mengganggu , Support Auto Download File
+// @description:ug بارلىق قىسقا ئۇلىنىش تور بېكەتلىرىنى ئايلىنىپ ئۆتۈپ ، كىشىنى بىزار قىلىدىغان ئۇلىنىش قىسقارتقۇچنى ئاپتوماتىك ھالدا مەنزىلىڭىزگە ئاتلاڭ.
+// @description:ar تجاوز جميع مواقع الروابط المختصرة يتخطى تلقائيًا أدوات تقصير الروابط المزعجة ، مباشرة إلى وجهتك
+// @description:he עוקף את כל אתרי הקישורים הקצרים מדלג אוטומטית על מקצרי קישורים מעצבנים, ישירות ליעד שלך
+// @description:hi सभी शॉर्टलिंक साइटों को बायपास करें, सीधे आपके गंतव्य पर कष्टप्रद लिंक शॉर्टनर को छोड़ दें
+// @description:ja すべてのショートリンクサイトをバイパスすると、迷惑なリンクショートナーが自動的にスキップされ、宛先に直接送信されます
+// @description:fr Contourner tous les sites de liens courts saute automatiquement les raccourcisseurs de liens gênants, directement vers votre destination
+// @description:ko 모든 짧은 링크 사이트 우회는 성가신 링크 단축기를 자동으로 건너뛰고 목적지로 직접 이동합니다.
+// @description:th ข้ามไซต์ลิงค์สั้นทั้งหมดข้ามลิงค์ย่อที่น่ารำคาญโดยอัตโนมัติไปยังปลายทางของคุณ
+// @description:bg Заобикаляне на всички сайтове с кратки връзки Автоматично пропуска досадните средства за съкращаване на връзки, директно до вашата дестинация
+// @description:ro Omite toate site-urile cu linkuri scurte Omite automat elementele de scurtare a linkurilor enervante, direct către destinația ta
+// @description:fi Ohita kaikki lyhytlinkkisivustot ohittaa automaattisesti ärsyttävät linkinlyhennykset suoraan määränpäähäsi
+// @description:it Ignora tutti i siti di collegamenti brevi Salta automaticamente i fastidiosi accorciatori di collegamenti, direttamente alla tua destinazione
+// @description:el Παράκαμψη όλων των τοποθεσιών σύντομων συνδέσμων Παρακάμπτει αυτόματα τα ενοχλητικά προγράμματα συντόμευσης συνδέσμων, απευθείας στον προορισμό σας
+// @description:eo Preterpasi Ĉiuj Mallongaj Ligiloj-Ejoj Aŭtomate Saltas ĝenajn Ligilojn, Rekte al Via Celo
+// @description:es Saltarse Automáticamente todos los enlaces acortados, AdFly, Linkvertise, y omitir anuncios, ir directamente al destino, ahora se agregó descarga automática de archivos
+// @description:hu Az összes rövid hivatkozási webhely megkerülése automatikusan átugorja a bosszantó linkrövidítőket, közvetlenül az úticélra
+// @description:nb Omgå alle korte lenker Nettsteder hopper automatisk over irriterende lenkeforkortere, direkte til destinasjonen din
+// @description:sk Obíďte všetky stránky s krátkymi odkazmi, ktoré automaticky preskočia otravné skracovače odkazov priamo do vášho cieľa
+// @description:sv Förbi alla korta länkar webbplatser hoppar automatiskt över irriterande länkförkortare, direkt till din destination
+// @description:sr Zaobići sve stranice s kratkim vezama automatski preskače dosadne skraćivače veza, izravno na vaše odredište
+// @description:pl Pomijaj wszystkie strony z krótkimi linkami automatycznie pomija irytujące skracacze linków, bezpośrednio do miejsca docelowego
+// @description:nl Omzeil alle sites met korte links en slaat automatisch vervelende linkverkorters over, rechtstreeks naar uw bestemming
+// @description:de Alle Short-Links-Sites umgehen Überspringt automatisch lästige Link-Shortener direkt zu Ihrem Ziel
+// @description:da Omgå alle korte links-websteder springer automatisk irriterende linkforkortere over, direkte til din destination
+// @description:cs Automaticky přeskočí všechny otravné zkracovače odkazů, včetně AdFly a Linkvertise, bez otravných reklam přímo do vašeho cíle
+// @description:uk Обійти всі сайти з короткими посиланнями. Автоматично пропускає дратівливі скорочення посилань безпосередньо до вашого пункту призначення
+// @description:ru Обход всех сайтов с короткими ссылками автоматически пропускает надоедливые сокращатели ссылок, прямо к месту назначения
+// @description:tr Tüm Kısa Linkleri Atla Siteler Can sıkıcı Link Kısaltıcıları Otomatik Olarak Atlar, Doğrudan Hedefinize
+// @description:vi Bỏ qua tất cả các trang web liên kết ngắn tự động bỏ qua các trang web liên kết gây phiền nhiễu, trực tiếp đến đích của bạn
+// @description:zh-cn 绕过所有短链接网站自动跳过烦人的链接缩短器，直接到您的目的地
+// @description:zh-tw 繞過所有短鏈接網站自動跳過煩人的鏈接縮短器，直接到您的目的地
+// @description:pt-br Ignorar todos os sites de links curtos ignora automaticamente encurtadores de links irritantes, diretamente para o seu destino
+// @description:fr-ca Contourner tous les sites de liens courts saute automatiquement les raccourcisseurs de liens gênants, directement vers votre destination
+// @include /^(https?:\/\/)(tmearn|makemoneywithurl|shrinkearn|techcyan|link4m|kingsleynyc|modcombo|healthy4pepole|kiktu|1bitspace|pennbookcenter|publicananker|mikl4forex|michaelemad|miklpro|forex-golds|mosqam|semawur|newassets.hcaptcha|challenges.cloudflare|riviwi|doshrink|tophostingapp|calmgram|techmny|forex-trnd|literaturetimes|onlineincoms|modsfire|adneow|short.clickscoin|adclickersbot|mobitaak|modebaca|paylinnk|pubiza|100puan|viralxns|cuts-url|popimed|toryxlink|aduzz|lycoslink|cdrab|ibrabucks|ethiomi|shortenbuddy|kiemlua|smoner|djbhojpurisongs|modsbase|ac.totsugeki|bcvc2|earnwithshortlink|bitzite|link1s|diadiemcheckin|tudiendanhngon|chooyomi|staaker|lucidcam|forexlap|forexmab|linkjust|admediaflex|rekonise|nostralink|bitcotasks|saa3at|mensventure|playpaste|forex-articles|ponselharian|liinkat|thegoneapp|mobi2c|studyuo|hookeaudio|thehostingmentor|linkshortify|mohtawaa|sodocasino68z|dz4link|foodxor|short1s|cr3zyblog|w88th2|fc-lc|expertvn|downphanmem|healdad|ez4mods|try2link|soft3arbi|techyadjectives|ex-foary|crypto4tun|blogmado|itsguider|mgnetu|infinitycoupon|videoslyrics|paid4link|coin-free|1xfaucet|cafenau|techacode|sevenjournals|7misr4day|trflink|get4links|memangbau|world2our|vavada5com|shortlite|bitefaucet|nguyenvanbao|pubgquotes|gaminginfos|sama-pro|shtfly|bestmobilenew|olhonagrana|chedrives|adrinolinks|techloadz|atglinks|nulledsafe|dreamcheeky|cutpaid|fidlarmusic|rodjulian|webhostingpost|tremamnon|samaa-pro|techrfour|ez4short|skincarie|techrayzer|shorteet|puggygaming|tranquangchuan|blogginglass|1shorten|loptelink|charexempire|shotzon|appsblaze|wellness4live|yummy-reciepes|link.bigboxnet|bioinflu|chamcuuhoc|litexblog|7nything|ezeviral|urlsopen|1shortlink|linkerload|filenext|doodshort|kienthucrangmieng|themorningtribune|gamalk-sehetk|adsafelink|cbshort|checkscoin|llinkon|links.apksvip|anhdep24|letsiu|earncryptowrs|cutdomain|usersdrive|uploadrar|bayfiles|krakenfiles|post.copydev|icutlink|short-zero|insurancevela|poketoonworld|arahtekno|mopahealth|nghiencar|educur|gpfaucet|bstlar|uploadhaven|aceskip|apk.miuiku|ecwizon|oncehelp|cutwin|reshort|otomi-games|sportsmediaz|big2short|techymozo|novelsapps|tirailangit|intercelestial|tribuntekno|bestcash2020|hoxiin|fooot-map|priefy|uptobox|1fichier|freebrightsoft|dz-linkk|chinhnhacoban|autodime|cortaly|link.3dmili|indianshortner|shortyearn|mp4upload|myshrinker|url.namaidani|userscloud|newworldnew|mkomsel|niinga|uppit|donia-tech|donia2tech|donia2link|btafile|pdiskshortener|aljoodm98|fx4vip|shortzon|up4cash|newsharsh|examkhata|linksht|note1s|teknosimple|discordserv|wikitraveltips|bantenexis|weadown|websiu|link.turkdown|pdfcoffee|faucetgigs|huongdanvuotlink123.blogspot|cuanhapkhau|traffic1s|leaveadvice|coins-town|zero-short|esopress|appsinsta|link-yz|apkadmin|ayelads|gawbne|anonfiles|sharemods|ddownload|asideway|drive.google|safe.intipanime|workupload|filedm|beingtek|sub2get|bindaaslinks|ex-load|xdabo|social-unlock|short-jambo|lyricsbaazaar|aprovax|vn88goat|shrinklo|xemsport|adpaylink|yxoshort|mdiskurl|blog.greenenez|vosliens.mykvostfr|cashlinko|ggoklink|mneylink|best-cpm|clicksfly|megaupto|ufacw|techcartz|softechbharat|okrzone|adshnk|sub2unlock|oydisk|besargaji|dare2qualify|netpopads|adflyfly|monimag|mo3dati|8raa|ikrey|tipsli|urlpayout|urlpoints|hocbeauty|95news|link.get4llink|shrt10|imgbsr|linknih|lessurl|techkeshri|shrinkgold|itechmafiia|link4earn|hosting4lifetime|oyunfilmindir|tecnicalboy|maxurlz|mr-forex|leadcricket|tackaway|88betbongda|sodovns|iwin68m|shrinkcash|dhlgame|bloginkz|blogtechh|hypershort|shorteurl|adrate|slinkware|foodupe|rshrt|dr-forex|indiajobagency|dz4link1|xpshort|urlshortx|getloanmoney|cryptst|blog.freeoseocheck|forex1pro|bico8|web1s|gogodl|infinityskull|doodjob|link2m|krownlinks|cut-shortlink|lollty|sheralinks|leitup|dev.miuiflash|upfilesurls|techyreviewx|shortox|bankvacency|bitcoinwinco|3rabsports|crazysonglyrics|vnpttelle|forexrw7|gpl-market|timeforearn|link4m|amritadrino|tutorialsaya|revadvert|fx-22|encurtandourl|mixrootmods|mealcold|cutpaidad|allsoftdrivers|cryptfaucet|hotmediahub|tai-mui-hong|adrevlnks|w88linkz|vailonxx|hocreview|sodo66vn|gyanilinks|hamrolekh|minersim|heenglish|comohoy|appkamods|entutes|coinsrev|komikman|bicolink|reshortfly|khoruou-gourmet|contentmenarik|altechen|socialwolvez|lifeezee|rsfinanceinfo|rssoftwareinfo|rshostinginfo|bk8goat|camnangvay|pixeldrain|finoxpert|zegtrends|blackleadr|nestshortener|shortcuthigh|perokokbijak|mneyvip|paste1s|rsshort|rsinsuranceinfo|rsadnetworkinfo|rseducationinfo|adwerty|devuploads|mega4upload|dropgalaxy|houseofblogger|crypto4yu|doodrive|wooseotools|tvseriesnmoviesdl|tgshortener|anchurl|neverdims|coincroco|syflink|adlvy|manofadan|api-secure.solvemedia|yogablogfit|alivedesktop|cut-fly|7r6|linkmonetizers|mcafee-com|mrproblogger)(\.com)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(zolomix|cararegistrasi|5golink|birdurls|snkra|artiskini|sh2rt|byboe|medcpu|nousdecor|jobswd|gkqnaexam|imperialstudy|linktrims|eda-ah|restorbio|bdnewsx|upshrink|gifans|ovlinks|imagenesderopaparaperros|yofaurls|digiromotion|wingifta|rancah|delishwell|solidfiles|ourtecads|zubatecno|covemarkets|disheye|askpaccosi|gets4link|elwatanelyoum|ledifha|crypturls|zombiebtc|techwhom|claimbtcbits|techsamir|techymedies|gamelopte|snowurl|claimfey|panylink|wrbloggers|tokenoto|saly-cash|nyawang|kongutoday|softwaresolutionshere|insuranceleadsinfo|bitcosite|clink1|upmienphi|coinsward|clink2|gadgetsreview27|anywho-com|teamtechnews|upload-4ever|admediaflex|btcpany|assettoworld|vikashmewada|linkyearn|appsbull|gam3ah|tinybc|diudemy|hereofamily|urlcorner|phsensei|4shared|ta2deem7arbya|solarchaine|file-upload|shorterall|tribuncrypto|cempakajaya|safelinkduit|adshorturl|linkbnao|tinycmd|cloudshrinker|proviralhost|technicalatg|v2links|ytsubme|rainurl|arahlink|m4cut|teachsansar|web9academy|shortxlinks|flyrar|pythondunyasi|on-scroll|shrtfly|shrinkclick|adsquite|earnash|hipsonyc|sonicbtc|menjelajahi|financerites|itscybertech|dash-free|sekilastekno|almontsf|cash4share|linkwards|freevpshere|kredilerim|porterfuneralhomee|aghtas|proappapk|cskua|toilaquantri|youssefsayed|aracodes|financenube|wiki-topia|pinloker|publicearn|uploadsoon|paid4file|gyanitheme|howifx|vocalley|factsdunya|blogyindia|networkhint|pernahsukses|vnshortener|gamingwithtr|udrop|rezence|businessnews-nigeria|elmokhbir|forexscp|youtube|pnfreegames|miuiflash|ishortify|thebindaas|vipalalmania|viewfr|startoshi|bakumoney|adbitfly|shrinkads|newsturbovid|mazen-ve3|thefastpost|encurtaclik|wiour|mtraffics|povathemes|viewboonposts|maqal360|sahityt|techhadi|lolinez|manga2day|rapid-cut|filepresident|earn2me|shorturllinks|suaurl)(\.com)(\/.*)/
+// @include /^(https?:\/\/)(ourcoincash|1manga|watchdoge|arenaboard|ccsl|adsgo|shon|crypto-faucet|bingeflix|studystar|bflinks|linkawynet|stryt|stfly|deltabtc|short-cash2|wizzly|mgnet|crypteen|dogeen|fauceteen|cutdl|sportawy|fexkomin|technemo|zoomcrypto|techboyz|99links|bastinews|offrcms|tsinfo|shortnow|shortlinkto|post.nites-tv|shortplus|technoloy|techyuth|stores.filmyzilla-in|swzz|acortame|alghtas|wizly|horanews|short2fly|bcvc|healthbloog|mmdrive|satoshi-hunter|0uq|blog.movies-near-me|st.kleaco|playlink|link2money|mkvlinks|nabits|welovecrypto|short2url|egstar|playdisk|gibit|studyis|kukslincs|magictoshi|eduqqq|nishankhatri|techthematter|moinsider|satoshi-win|my-coins|cryptofenz|fc-lc)(\.xyz)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(senuansatechno|claimercorner|shortly|doctorcoin|speedynews|1apple|ffworld|textpage|fidovy|pcomnews|adshorti|sapica|earnfacut|urlbharat|dropz|chainfo|techleets|earnl|shortpay|modmakers|kyshort|trxking|aoutoqw|healthysamy|coin2pay|tsinfo|financeandinsurance|mangafun|opli|beycoin|myartical|insurancepost|lifeinsurancesblog)(\.xyz)(\/.*)/
+// @include /^(https?:\/\/)(techydino|world-trips|yoshare|lets.5get|crypto-fi|wpcheap|coinmasterx|catcut|aztravels|dulichkhanhhoa|sub2unlock|dataupload|forex-gold|7apple|ccurl|link1s|url.namaidani|adskip|hurirk|usfinf|xervoo|hexupload|eloism|cutt|forexshare|blog.cryptowidgets|neexulro|dailyuploads|douploads|simfileshare|fir3|magybu|racaty|linegee|blogesque|thuocdangian|altblogger|letsboost|conghuongtu|vinaurl|tecmundo|try2link|blog.coinsvalue|khaddavi|8tm|traffic24h|shortearn|cut-y|megadb|cpmlink|blog.webfreetools|rslinks|dupload|userupload|oaxyteek|xonnews|yosite|cryptopaid|bluetechno|w88vnz|tmearn|click1s|turbobit|megaup|hitfile|v2guides|cutearn|hislink|financeyogi|sahlmarketing|rapidgator|blogbux|otechno|fileresources|freepreset)(\.net)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(digitalnaz|owllink|mozlink|cryptosats|rocklinks|celinks|jiotech|bitcomarket|illink|jemari|paid4link|link3s|boscoin|linkrex|fire-link|urlw|pilinks|linkshortify|youshort|bicolink|cookinguide|indiurl.in|vip-link|themezon|tnshort|makeupguide|carstopia|btcsatoshi|hostadviser|carsmania|file-upload|up-4ever)(\.net)(\/.*)/
+// @include /^(https?:\/\/)(tnlink|jrlinks|qualitystudymaterial|missionhight|wpking|zagl|streamshort|cutp|earnmoj|cplink|cryptomonitor|linkshortify|htlinks|linkocean|djxmaza|bildirim|battlechamp|sahilsumra|kerdlinfo|urlcut|insurancevlog|itechlogic|videolyrics|tekcrypt|missionhight|gplinks|moddingzone|adybrands|gz2|dulink|aclinks|hidelinks|shortearn|u.apgy|modzilla|thebestwishes|mrdoge|s2fly|filerio|thebloggerspoint|jslink|moviesnew|technocubes|afly|healthynepal|djnonstopmusic|omegalinks|jobform|kingbit.co|du-link|ouoi|by6|adrinolinks|rklinks|mymobilehub|techdaze|link4earn|rupamobile|examsolution|earn4link|kalvidudes|techwithsanikant|ibyt|flyurl|cosmictap|naukrilelo|nanolinks|cutp|linkpays|trends99|link.skm4u.co|linkwards.co|computerpedia|apkupload|banaraswap|jobphoria|techincubator|bookszone|file-upload|freebitco|apna-blog|earn4clicks|adbitfly|greylinks|djqunjab)(\.in)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(cashurl|bitcoinly|crazyblog|zolomix|technologylover|expertlinks|largestpanel|rsrlink|short2url|99links|enit|url2go|tnvalue|pvidly|apurl|urlinked|mdlink|gamerfang|writedroid|teckypress|fixno|paisakamalo|inkik|shrinkforearn|easysky|mdiskplayer|akcartoons|open2get|adzz|qora|insurancegold|smallinfo|filmypoints|linkshild|viplink|cuturl|e2share|shorturllink|opiniontoday|theforyou|sigmalinks|financerites|cordtpoint.co|mdisk.net|techyinfo|btcbitco|apnashortener|megafly|megaurl|tplinks|tnlinks|meclipstudy|v2links|finclub|greymatterslinks|shareus|apanmusic|shrinkbit)(\.in)(\/.*)?/
+// @include /^(https?:\/\/)(.+)?(scratch247|azmath|mobilereview|inform3tion|shortlinkto|wez|bitcrypto|cooklike|videoclip|brbushare|fanclup|nulledlist|coinscap|1short|69vn|web1s|missreview|every-crypto|ajlinks|bit4me|sportweb)(\.info)(\/.*)/
+// @include /^(https?:\/\/)(exee.my|onlineteori.my|karyawan.co|rotator.nurul-huda.sch|activity.my|massive.my|caview.my|nesiaku.my|lewati|arahlink|linkk|free4u.nurul-huda.or|link.nesia.my|omdata.my|mydata.my|healthydad.my|lajangspot.web|mbantul.my)(\.id)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(suratresmi|carapedi|salink|mycut.my|apasih.my|indofaucet.my|wapka|tonanmedia.my)(\.id)(\/.*)/
+// @include /^(https?:\/\/)(aylink|mynewsmedia|gtlink|droplink|123link|linksfy|adshorti|hxfile|dosya|takem|dausel|modlink|slwatch|5tl|desiupload|tech5s|9-animie|veganho|nulledmod|veganac|dealprice|arabplus2|cut-y|adshort|sub2me|gplinks|web1s|ku11net|mixdrop)(\.co)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(takez|linksfire|vosan|tinygo|veganab|adfloz|fexkomin|linksly|finsurances)(\.co)(\/.*)/
+// @include /^(https?:\/\/)(girls-like|gobits|zoss|tlin|terafly|petafly|gigafly|adnews|papanews|panyflay|mozzfly|shortus|short.croclix|best-news|4cash|mega-news|wildblog|dddrive|linkpoi|m.newhit|mboost|linkshorts|exafly|nonofly|lozzfly|uptomega|stfly|adbull|youshort|health-and|cutx|adsk|linkfly|appdrive|shorter.earn-hub|pkin|cashando|hunterkiller|acortalink|ar-goal|linkdam|adzully|adbully|zumpa|botfly|weezo|gtlinks|krownlinks|blog24|sh24|slfly|dbree|yudiblog)(\.me)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(theconomy|richlink|qnix|hatelink|rb7|shrinke|skiplink)(\.me)(\/.*)/
+// @include /^(https?:\/\/)(newforex|wplink|nbyts|wealthystyle|clicksfly|happy-living|webcoin.coinrain|teacherana|earnow|earn-cash|yourtechnology|apks|network-earn|shopforex|o-pro|wedocrypto|softindexsite|ea-shorter.earn-hub|kooora365|flylinks|earn-bitcoin|ludofantsypk|panytourism|wikiversity|exactpay|seulink)(\.online)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(readi|linkmumet|shorte|battleroyal|kjcrypto|litecoinly|techeysub|forexit|o-pro)(\.online)(\/.*)/
+// @include /^(https?:\/\/)(sitr|downfile|savelink|linkshortify|shareus|mobileprice|mynurse|short1|forextrader|shortener.goldcontent|lksfy|1xlink|savelink|busthings|icerik|adfly)(\.site)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(cekip|link4rev|coin-city|urlcash|alwrificlick|softindex|promo-visits|bluemediafile|flyearn|claimbits|shtfly)(\.site)(\/.*)/
+// @include /^(https?:\/\/)(bluemediafile|tourismtravels1|tourismtravels2|tourismtravels3|tourismtravels4|tourismtravels5|tourismtravels9|filepress)(\.sbs)(\/.*)/
+// @include /^(https?:\/\/)(earnme|sanoybonito|automotur|kooza|1link|zentum|forexwaw|megatube|88bet1|clicknupload)(\.club)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(usanewstoday|kadal|webhostingtips|mytop5)(\.club)(\/.*)/
+// @include /^(https?:\/\/)(adrev|paid4|yousm|coinpayz|tr|tfly|sox|clk.dti|besturl|boostme|takefile|appo|linkshortifyx|panyshort|mdiskshortner|leit|shortano|shortino|streamcheck|bildirim|healthmart)(\.link)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(vshort|stex|cash4|zuba|adsen|shrinkme|shrs|xcut)(\.link)(\/.*)/
+// @include /^(https?:\/\/)(shurt|shortit|adsy|bitlinks|clik|playstore|megalink|link4)(\.pw)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(prz|pong|insfly|wts|sollink|linkvor)(\.pw)(\/.*)/
+// @include /^(https?:\/\/)(linkshor|cortlink|moneylink)(\.tk)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(madfaucet|mineshor)(\.tk)(\/.*)/
+// @include /^(https?:\/\/)(onimports|link.encurtaon|economiarelevante)(\.com\.br)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(kiiw|passgen|wordcounter|shrink|revcot|clickzu|shortzu|flyzu|cpm|viply)(\.icu)(\/.*)/
+// @include /^(https?:\/\/)(tny|tinyurl)(\.so)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(zshort|claimcrypto|cashearn|1ink|linkpay|moneylink|intnews|openload|linkspy|letsupload|linx|upvid|adurly|getlink|stfly)(\.cc)(\/.*)/
+// @include /^(https?:\/\/)(exey|ezlinks|techmody|ouo|uploady|racaty|1short|earnlink|casinotructuyen|vn88|blitly|getdashcoin|saly|cuty|oke|letsupload|eio|oii|exe|viplinks|shrinkme|up-load|gofile|apkmody|easycut)(\.io)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(linkfly|usalink|shorti|datacheap)(\.io)(\/.*)/
+// @include /^(https?:\/\/)(cryptoad|wikile|uploadev|mega4upr|cshort|payskip|homeairquality|shortearn|roll.btc25|sl.btc25|earnsfly|sl2.btc25|bugatti.eu|linkbong88moinhat|oploverz|kusonime|komikindo|multiup|novafile)(\.org)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(medipost|shrinkurl|keeplinks|rajdlsg|readbitcoin|writedroid.eu|modmania.eu)(\.org)(\/.*)/
+// @include /^(https?:\/\/)(jameeltips|mitly|adfoc|link4fun|shrinke|siiu|vzu)(\.us)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(yalla-shoot-now|forexeen|jaelink|link2u)(\.us)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(adshort|1bit|2the|careerhunter|galaxy-link|adz7short|oscut|cryptonworld|dutchycorp)(\.space)(\/.*)/
+// @include /^(https?:\/\/)(noweconomy|deportealdia|adshort|ay|pngit|pndx|tyzen|shivshakti)(\.live)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(earnads|genpassword|shrlink|punyamerk|shortnow|freeltc|forexfiter)(\.top)(\/.*)/
+// @include /^(https?:\/\/)(freelitecoin|uplinkto|1Link|dropgalaxy|smartlink|1mlink)(\.vip)(\/.*)/
+// @include /^(https?:\/\/)(faucetcrypto|bildirim|beta.shortearn)(\.eu)(\/.*)/
+// @include /^(https?:\/\/)(nex-url|olamovies|atrologyrex)(\.cyou)(\/.*)/
+// @include /^(https?:\/\/)(antonimos|blog.hostratgeber|sinonimos)(\.de)(\/.*)/
+// @include /^(https?:\/\/)(webmobile|dailytime)(\.store)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(flyad|lootcash|manylink)(\.vip)(\/.*)/
+// @include /^(https?:\/\/)(romania|met|warp)(\.bz)(\/.*)/
+// @include /^(https?:\/\/)(2ad|viya|17o)(\.ir)(\/.*)/
+// @include /^(https?:\/\/)(adshrink|cutin)(\.it)(\/.*)/
+// @include /^(https?:\/\/)(pingit|files|upo)(\.im)(\/.*)/
+// @include /^(https?:\/\/)(clk|9xupload|mg188|adbrite)(\.asia)(\/.*)/
+// @include /^(https?:\/\/)(aii|clk|oko|ctr|mexa|sht|pro)(\.sh)(\/.*)/
+// @include /^(https?:\/\/)(iir|tei|ier|ckk)(\.ai)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(upload|prx)(\.ee)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(ptr|mdn|neonime)(\.lol)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(goo|oxy)(\.st)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(paylinks|oxy)(\.cloud)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(mdn|insurance4u)(\.world)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(cryptofuns|cryptonetos)(\.ru)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(mirrored|clicknupload|sumoweb|streamhide|hec)(\.to)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(ouo|forextrader|daga88)(\.today)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(techgeek|adsgo|seulink)(\.digital)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(goto.com|nishankhatri.com)(\.np)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(360shortlink|myra|morunique|tmpfree|reeshort)(\.cf)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(i8l|clk|pi-l|bcvc|modli|beast|boost|uptobhai|work|5tl|gainl)(\.ink)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(mhma12|surflink|techtrim|adcash|yotrickslog|shortlinks|pdiskpage)(\.tech)(\/.*)/
+// @include /^(https?:\/\/)(kiw|redir.123file|cutl)(\.li)(\/.*)/
+// @include /^(https?:\/\/)(fc|fcc)(\.lc)(\/.*)/
+// @include /^(https?:\/\/)(adz|komikcast)(\.moe)(\/.*)/
+// @include /^(https?:\/\/)(1dogecoin|faucet|cpu-miner.leaks)(\.work)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(123link|mtagang|shorturl)(\.biz)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(3shorturl|earnbitcoin)(\.gq)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(exe|exee|exep|exeo|upfiles|cutty|linkfly|rsgamer|exego)(\.app)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(makeeasybtc|softindex|techus|cryptorotator)(\.website)(\/.*)/
+// @include /^(https?:\/\/)(linka|xtrabits|skipads|softindex|elinks|freecc|ccshort|clicknupload|workink|filepress|coinsl|adbitfly)(\.click)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(easysl|adlink|adzilla|urlcash|freebitcoin|urlcashh|revly|jetmedia)(\.click)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(hamody|nathanaeldan|freddyoctavio|davisonbarker|clks|cryptosh|bestfonts|gitlink|openurl|bitads|afly|mdisk|earnify|inshort)(\.pro)(\/.*)/
+// @include /^(https?:\/\/)(claim|pricenews|alaashow|bitclick|adsbtc|moburl|clicklink|bitcoinfaucet|linkmatic|linkpress|terabox|exalink|oscut)(\.fun)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(apkmody|freetrx)(\.fun)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(up-load|zcash|mdisk|holdtoearn|g4z)(\.one)(\/.*)/
+// @include /^(https?:\/\/)(linkati|curto|mg188|freebitcoin|bigbtc|firefaucet)(\.win)(\/.*)/
+// @include /^(https?:\/\/)(zonearn|hynews)(\.biz)(\/.*)/
+// @include /^https:\/\/linkvertise\.com\/(1|2|3|4|5|6|7|8|9)/
+// @include /^(https?:\/\/)(.+)?(nhacaiuytin|sv388)(\.ac)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(mediafire)(\.com)\/(download|file)/
+// @include /^(https?:\/\/)(.+)?(cryptocurrencytracker|freefaucet)(\.biz)\/(link)/
+// @include /^(https?:\/\/)(.+)?(thanglonggroup|bigone|kienvang|silcot.com|bemom.com|sunflowersteiner.edu)(\.vn)(\/.*)/
+// @include /^(https?:\/\/)(.+)?(clickscoin|offeroc|cryptotyphoon|softairbay)(\.com)\/(short)/
+// @exclude *://studio.youtube.com/*
+// @exclude *://*.vosan.co/
+// @match   *://al.ly/*
+// @match   *://za.gl/*
+// @match   *://c2g.at/*
+// @match   *://tii.la/*
+// @match   *://send.cm/*
+// @match   *://adoc.pub/*
+// @match   *://files.fm/*
+// @match   *://1gom.shop/*
+// @match   *://slink.bid/*
+// @match   *://ouo.press/*
+// @match   *://7cc.96.lt/*
+// @match   *://gktech.uk/*
+// @match   *://one88.day/*
+// @match   *://giti.works/*
+// @match   *://tinyurl.is/*
+// @match   *://*.gdtot.cfd/*
+// @match   *://share4u.men/*
+// @match   *://filemoon.sx/*
+// @match   *://getzen.cash/*
+// @match   *://quesignifi.ca/*
+// @match   *://*.zippysha.re/*
+// @match   *://uplinkto.hair/*
+// @match   *://litecoin.host/*
+// @match   *://drop.download/*
+// @match   *://linkshrink.ca/*
+// @match   *://*/*?xref=*&sl=*
+// @match   *://short.express/*
+// @match   *://*.coinhub.wiki/*
+// @match   *://urlcashh.quest/*
+// @match   *://arbweb.info/sl/*
+// @match   *://*.cizgifilm.tv/*
+// @match   *://downloads.ninja/*
+// @match   *://*.trangchu.news/*
+// @match   *://automat.systems/*
+// @match   *://*.rapidshort.lat/*
+// @match   *://clicknupload.red/*
+// @match   *://*/recaptcha/api2/*
+// @match   *://docs.google.com/uc*
+// @match   *://dutchycorp.ovh/s*/*
+// @match   *://castles4kids.co.nz/*
+// @match   *://adbtc.top/surf/browse/*
+// @match   *://anonym.ninja/download/*
+// @match   *://faucetcrypto.net/short/*
+// @match   *://konstantinova.net/verify/*
+// @match   *://playnano.online/watch-and*
+// @match   *://adbtc.top/surfiat/browse/*
+// @match   *://noodlemagazine.com/download/*
+// @match   *://faucetcrypto.com/claim/step/*
+// @match   *://*.racedepartment.com/downloads/*
+// ==/UserScript==

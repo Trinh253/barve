@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "允许身陷审查阴霾的用户利用你的网络连接访问 Tor。"
+   },
+   "badgeCookiesOff": {
+      "message": "Cookie 未启用。"
+   },
+   "popupBridgeUnreachable": {
+      "message": "无法连接至网桥。"
+   },
+   "popupDescOn": {
+      "message": "你的 Snowflake 在过去 24 小时内为 $1 位用户提供规避审查的帮助"
+   },
+   "popupEnabled": {
+      "message": "启用"
+   },
+   "popupLearnMore": {
+      "message": "详细了解"
+   },
+   "popupRetry": {
+      "message": "重试"
+   },
+   "popupRetrying": {
+      "message": "正在重试…"
+   },
+   "popupRunInBackground": {
+      "message": "关闭浏览器时保持运行状态"
+   },
+   "popupStatusOff": {
+      "message": "Snowflake 已关闭"
+   },
+   "popupStatusOn": {
+      "message": "当前连接的用户数量：$1"
+   },
+   "popupStatusReady": {
+      "message": "你的 Snowflake 已准备就绪，可为用户规避审查提供帮助"
+   },
+   "popupWebRTCOff": {
+      "message": "未检测到 WebRTC 功能。"
+   }
+}

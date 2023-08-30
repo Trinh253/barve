@@ -1,0 +1,41 @@
+{
+   "appDesc": {
+      "message": "Erlaube Nutzern in zensierten Ländern, deine Internetverbindung zu nutzen, um auf das Tor-Netzwerk zuzugreifen."
+   },
+   "badgeCookiesOff": {
+      "message": "Cookies sind nicht aktiviert."
+   },
+   "popupBridgeUnreachable": {
+      "message": "Konnte keine Verbindung zur Brücke herstellen."
+   },
+   "popupDescOn": {
+      "message": "Anzahl der Benutzer, denen dein Snowflake in den letzten 24 Stunden geholfen hat, die Zensur zu umgehen: $1"
+   },
+   "popupEnabled": {
+      "message": "Aktiv"
+   },
+   "popupLearnMore": {
+      "message": "Mehr erfahren"
+   },
+   "popupRetry": {
+      "message": "Erneut versuchen"
+   },
+   "popupRetrying": {
+      "message": "Versuche erneut ..."
+   },
+   "popupRunInBackground": {
+      "message": "Weiterlaufen lassen, wenn der Browser geschlossen wird"
+   },
+   "popupStatusOff": {
+      "message": "Snowflake ist ausgeschaltet"
+   },
+   "popupStatusOn": {
+      "message": "Anzahl der derzeit verbundenen Benutzer: $1"
+   },
+   "popupStatusReady": {
+      "message": "Dein Snowflake ist bereit, den Benutzern bei der Umgehung der Zensur zu helfen"
+   },
+   "popupWebRTCOff": {
+      "message": "WebRTC-Fähigkeit nicht erkannt."
+   }
+}
